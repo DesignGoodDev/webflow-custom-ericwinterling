@@ -1,0 +1,127 @@
+<style>
+p {
+  margin-bottom: 32px;
+}
+
+p + p {
+  margin-top: -18px;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+p:first-child {
+  margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+}
+
+p a {
+  font-weight: 700;
+}
+
+.label h1,
+.label h2,
+.label h3,
+.label h4,
+.label h5,
+.label h6,
+.label p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.label p {
+  font-size: 12px;
+  letter-spacing: 0.33px;
+}
+
+.rte--cta-links.aqua a {
+  color: #3399bc;
+}
+.rte--cta-links.teal a {
+  color: #086c70;
+}
+.rte--cta-links.yellow a {
+  color: #e69b00;
+}
+.rte--cta-links.rose a {
+  color: #c18178;
+}
+.rte--cta-links.ruby a {
+  color: #cd2027;
+}
+.rte--cta-links.merlot a {
+  color: #8a2e6a;
+}
+
+input,
+textarea {
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.hyphens {
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  /* word-break: break-all; */
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  /* min chars before a hyphen */
+  -webkit-hyphenate-limit-before: 6;
+  /* min chars after a hyphen */
+  -webkit-hyphenate-limit-after: 3;
+  /* max # consecutive lines ending in hyphens */
+  -webkit-hyphenate-limit-lines: 2;
+  -moz-hyphenate-limit-chars: 6 3 2;
+  -webkit-hyphenate-limit-chars: 6 3 2;
+  -ms-hyphenate-limit-chars: 6 3 2;
+  hyphenate-limit-chars: 6 3 2;
+}
+
+@media (max-width: 479px) {
+  .xs-hyphens h1,
+  .xs-hyphens h2 {
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    -webkit-hyphenate-limit-before: 6;
+    -webkit-hyphenate-limit-after: 3;
+    -webkit-hyphenate-limit-lines: 2;
+    -moz-hyphenate-limit-chars: 6 3 2;
+    -webkit-hyphenate-limit-chars: 6 3 2;
+    -ms-hyphenate-limit-chars: 6 3 2;
+    hyphenate-limit-chars: 6 3 2;
+  }
+}
+</style>

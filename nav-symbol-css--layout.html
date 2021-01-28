@@ -1,0 +1,44 @@
+<style>
+.text__box::before {
+  position: absolute;
+  top: -70px;
+  left: -200px;
+  width: calc(100% + 250px);
+  height: calc(100% + 120px);
+  border: 3px solid #363436;
+  content: '';
+}
+.text-box--left::before {
+  right: -200px;
+  left: auto;
+}
+.text-box--behind::before {
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .text__box::before {
+    top: -40px;
+    left: -20%;
+    width: calc(140%);
+    height: calc(100% + 80px);
+  }
+  .text-box--left::before {
+    right: -20%;
+    left: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .text__box::before {
+    top: -40px;
+    left: -26%;
+    width: calc(140%);
+    height: calc(100% + 70px);
+  }
+  .text-box--left::before {
+    right: -26%;
+    left: auto;
+  }
+}
+</style>

@@ -1,0 +1,252 @@
+<style>
+.navbar ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.navbar li {
+  margin-bottom: 0;
+}
+
+.navbar li::marker {
+  display: none;
+  content: '';
+}
+
+.navbar {
+  background-color: #363436;
+}
+
+.home .navbar {
+  background-color: #fff;
+}
+
+/* Primary Nav */
+.nav-links ul {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0;
+}
+
+.nav-links li {
+  padding: 0 14px;
+  color: #f7f6f1;
+  font-size: 12px;
+  line-height: 1.125;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
+
+.nav-links li:last-child {
+  padding-right: 0;
+}
+
+.nav-links li a {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: #f7f6f1;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border 250ms ease;
+}
+
+.home .nav-links li,
+.home .nav-links li a {
+  color: #363436;
+}
+
+.nav-links li a.w--current,
+.nav-links li a:hover {
+  border-bottom-color: #f7f6f1;
+}
+
+.home .nav-links li a.w--current,
+.home .nav-links li a:hover {
+  border-bottom-color: #363436;
+}
+
+/* Upper Nav */
+.nav__upper ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav__upper li {
+  padding-right: 16px;
+  padding-left: 16px;
+  font-size: 11px;
+  line-height: 1;
+  text-transform: none;
+}
+
+.nav__upper li:last-child {
+  padding-right: 0;
+}
+
+.nav__upper li a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 250ms ease, border 250ms ease;
+}
+
+.home .nav__upper li a {
+  color: #363436;
+}
+
+.nav__upper li a.w--current,
+.nav__upper li a:hover {
+  border-bottom-color: #f7f6f1;
+  opacity: 1;
+}
+
+.home .nav__upper li a.w--current,
+.home .nav__upper li a:hover {
+  border-bottom-color: #363436;
+}
+
+/* Hamburger */
+.hamburger .bar {
+  transition: transform 100ms ease-in-out;
+}
+
+body.menu-opened .hamburger .top {
+  transform: rotate(37deg) translateX(3px) translateY(-3px);
+  transform-origin: top left;
+}
+
+body.menu-opened .hamburger .middle {
+  transform: scale(0);
+}
+
+body.menu-opened .hamburger .bottom {
+  transform: rotate(-37deg) translateX(3px) translateY(3px);
+  transform-origin: bottom left;
+}
+
+.home .hamburger .bar {
+  background-color: #363436;
+}
+
+/* Mobile Nav */
+.navbar--mobile {
+  display: none;
+}
+
+.nav__inner {
+  transition: left 200ms ease;
+}
+
+body.menu-opened .nav__inner {
+  left: 0;
+}
+
+.home .footer {
+  color: #363436;
+  background-color: #f7f6f1;
+}
+
+.home .footer__inner {
+  border-color: #363436;
+}
+
+@media (max-width: 991px) {
+  .navbar--mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: #363436;
+  }
+
+  .nav__left {
+    display: none;
+  }
+
+  .logo-link {
+    flex: 1 0 auto;
+    justify-content: flex-start;
+    max-width: 200px;
+    margin-right: auto;
+  }
+
+  .nav__inner {
+    position: absolute;
+    z-index: 1000;
+    display: block;
+    width: 100%;
+    background-color: #363436;
+  }
+
+  .navbar .container--nav,
+  .navbar .nav-links ul,
+  .nav__upper ul {
+    display: block;
+  }
+
+  .nav__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__right .nav-links li {
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .nav__right .nav-links li:last-of-type {
+    border-bottom: 0;
+  }
+
+  .nav-links li::after {
+    border: 0;
+  }
+
+  .nav__right .nav-links li a {
+    margin: 0 0 9px 0;
+    padding-top: 13px;
+    padding-bottom: 6px;
+  }
+
+  .home .nav__upper li a,
+  .home .nav-links li a {
+    color: #f7f6f1;
+  }
+
+  .home .nav-links li a.w-current,
+  .home .nav-links li a:hover,
+  .home .nav__upper li a.w-current,
+  .home .nav__upper li a:hover {
+    color: #f7f6f1;
+    border-bottom-color: #f7f6f1;
+  }
+
+  .nav__upper {
+    position: static;
+  }
+
+  .nav__upper ul {
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .nav__upper li {
+    padding: 10px 0;
+    border: 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .nav-links ul {
+    margin-left: 0;
+  }
+}
+</style>
