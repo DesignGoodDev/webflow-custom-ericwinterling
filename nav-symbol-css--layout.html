@@ -12,9 +12,6 @@
   right: -200px;
   left: auto;
 }
-.text-box--behind::before {
-  z-index: -1;
-}
 
 @media (max-width: 991px) {
   .text__box::before {
@@ -26,6 +23,12 @@
   .text-box--left::before {
     right: -20%;
     left: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .section--home-cher .text__box::before {
+    display: none;
   }
 }
 
